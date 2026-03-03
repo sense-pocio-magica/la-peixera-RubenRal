@@ -23,7 +23,7 @@ Només tenen un sol sexe, i per tant no es reprodueixen
 Tortugues: Es mouen com els peixos. 
 Hi ha mascles i femelles.
 Les Tortugues són invulnerables als taurons. Si un tauró xoca amb una tortuga el tauró, canvia de direcció
-//Fill dels peixos: s'afegeix interaccio amb els taurons 
+ 
 
 Si es troben dos del mateix tipus i de diferent sexe es reprodueixen i se’n crea un de nou que es mourà en una direcció aleatòria (que no sigui cap de la dels pares)
 
@@ -36,8 +36,31 @@ Els taurons es mengen a tots els peixos de les altres espècies que troben sense
 //La pecera es (X,Y)
 //Para cada iteracion todos los peces hacen algo
 
-//Fill 1: Peixos normals. 50% Mascle o femella (random bool es femella )/ Enum Mascle o Femella
-//Fill dels peixos, s'afegeix la funcio de que viuen nomes 50 iteracions
 
-git config --global user.email "you@example.com"
-  git config --global user.name "Your Name"
+//Fill 1: Peixos normals. 50% Mascle o femella (random bool es femella )/ Enum Mascle o Femella
+//Fill dels peixos, s'afegeix la funcio de que viuen nome
+s 50 iteracions
+////Fill dels peixos: s'afegeix interaccio amb els tauron
+
+Programa:
+El programa son diferents tipus de peixos amb diferents comportaments en una matriu de 20*20,
+els peixos es mouen tots durant iteracions, una iteracio finalitza quan tots els peixos han tingut el seu "torn", donarem per suposet que tot succeix a "la vegada"
+
+
+Objectes
+Peix(Pare) 
+Posicio
+
+Peix Normal
+Eligen una direccion random cuando se crean y hasta que no se mueren no cambian de direccion de movimiento cuando llegan a un extremo de la direccion en la que avanzan,
+aparecen en el extremo contrario del mapa.
+Hay Machos y Hembras
+
+Peix Tauro
+Eligen una direccion random cuando se crean y hasta que no se mueren no cambian de direccion de movimiento cuando llegan a un extremo de la direccion en la que avanzan,
+aparecen en el extremo contrario del mapa.
+Hay Machos y Hembras
+Los Tiburones Viven 50 rondas
+
+Peix Pop
+Solo se mueven por borde de la pecera
