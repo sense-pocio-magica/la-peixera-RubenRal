@@ -1,0 +1,79 @@
+En una peixera virtual hi ha una quantitat de peixos de diverses espècies.
+
+La peixera és una graella on els habitants es mouen en rondes. 
+
+En cada ronda es mouen tots i interactuen amb els altres peixos si coincideixen en la mateixa casella
+    
+
+Les espècies de peixos que hi ha en la peixera són:
+
+
+Els peixos normals s’han adaptat totalment a la peixera i quan neixen tenen una direcció de moviment i no canvien mai de direcció. Quan arriben a un extrem, com que la peixera és esfèrica, tornen a l’altre extrem i es continuen movent. 
+Hi ha peixos mascles i peixos femelles
+
+Taurons: Es mouen com els peixos. 
+Hi ha taurons mascles i femelles
+
+Els taurons viuen 50 rondes
+
+Pops: Es mouen pels laterals de la peixera
+
+Només tenen un sol sexe, i per tant no es reprodueixen
+
+Tortugues: Es mouen com els peixos. 
+Hi ha mascles i femelles.
+Les Tortugues són invulnerables als taurons. Si un tauró xoca amb una tortuga el tauró, canvia de direcció
+ 
+
+Si es troben dos del mateix tipus i de diferent sexe es reprodueixen i se’n crea un de nou que es mourà en una direcció aleatòria (que no sigui cap de la dels pares)
+
+Totes les espècies odien els altres peixos que són del seu mateix sexe i els maten si se’ls troben. Com que són iguals, es moren tots dos (menys els pops que canvien de direcció)   
+
+Els taurons es mengen a tots els peixos de les altres espècies que troben sense importar-los si són mascles o femelles (excepte a les tortugues)
+
+
+//Crear lista de peces? Un pez padre i hijo para cada especie de pez
+//La pecera es (X,Y)
+//Para cada iteracion todos los peces hacen algo
+
+
+//Fill 1: Peixos normals. 50% Mascle o femella (random bool es femella )/ Enum Mascle o Femella
+//Fill dels peixos, s'afegeix la funcio de que viuen nome
+s 50 iteracions
+////Fill dels peixos: s'afegeix interaccio amb els tauron
+
+Programa:
+El programa son diferents tipus de peixos amb diferents comportaments en una matriu de 20*20,
+els peixos es mouen tots durant iteracions, una iteracio finalitza quan tots els peixos han tingut el seu "torn", donarem per suposet que tot succeix a "la vegada"
+
+
+Objectes
+Peix(Pare) 
+Posicio
+
+Peix Normal
+Eligen una direccion random cuando se crean y hasta que no se mueren no cambian de direccion de movimiento cuando llegan a un extremo de la direccion en la que avanzan,
+aparecen en el extremo contrario del mapa.
+Hay Machos y Hembras
+
+Peix Tauro
+Eligen una direccion random cuando se crean y hasta que no se mueren no cambian de direccion de movimiento cuando llegan a un extremo de la direccion en la que avanzan,
+aparecen en el extremo contrario del mapa.
+Hay Machos y Hembras
+Los Tiburones Viven 50 rondas
+    
+Peix Pop
+Solo se mueven por borde de la pecera
+4 ifs
+if x= max && y = max
+    while y >  0
+        y -1;
+if x= max && y = 0
+    while x > 0
+        x-1
+if x= 0 && y = 0
+    while y < max
+        y+1
+if x= 0 && y = max
+    while x < max
+        x+1;
