@@ -2,5 +2,8 @@
 
 public class Peix
 {
-    
+    public Peix()
+    {
+        
+    }
 }

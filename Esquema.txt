@@ -61,6 +61,19 @@ Eligen una direccion random cuando se crean y hasta que no se mueren no cambian 
 aparecen en el extremo contrario del mapa.
 Hay Machos y Hembras
 Los Tiburones Viven 50 rondas
-
+    
 Peix Pop
 Solo se mueven por borde de la pecera
+4 ifs
+if x= max && y = max
+    while y >  0
+        y -1;
+if x= max && y = 0
+    while x > 0
+        x-1
+if x= 0 && y = 0
+    while y < max
+        y+1
+if x= 0 && y = max
+    while x < max
+        x+1;
